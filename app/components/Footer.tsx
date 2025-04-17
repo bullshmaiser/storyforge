@@ -5,20 +5,29 @@ import Image from 'next/image'
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-gray-800 py-8 text-white">
-      <div className="max-w-7xl mx-auto px-4 flex flex-col items-center space-y-4">
-        <div className="flex items-center gap-2">
-          <Image src="/logo.svg" alt="Logo" width={44} height={67} />
-          <span className="text-lg font-semibold">StoryForge</span>
+    <footer className="w-full bg-white border-t border-gray-200 py-8">
+      <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
+
+        {/* Logo + Copyright */}
+        <div className="flex items-center space-x-3">
+          <Link href="/">
+            <Image src="/logo.svg" alt="StoryForge Logo" width={44} height={67} />
+          </Link>
+          <span className="text-sm text-gray-600">© 2025 StoryForge</span>
         </div>
-        <nav className="flex gap-8">
-          <Link href="/about" className="hover:text-gray-400">About</Link>
-          <Link href="/pricing" className="hover:text-gray-400">Pricing</Link>
-          <Link href="/blog" className="hover:text-gray-400">Blog</Link>
-          <Link href="/contact" className="hover:text-gray-400">Contact</Link>
-        </nav>
-        <p className="text-sm text-gray-400">© 2025 StoryForge. All rights reserved.</p>
+
+        {/* Links */}
+        <div className="flex items-center space-x-6">
+          <Link href="/terms" className="text-gray-600 hover:text-black text-sm">Terms of Service</Link>
+          <Link href="/disclaimer" className="text-gray-600 hover:text-black text-sm">Disclaimer</Link>
+
+          {/* Instagram Icon */}
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <Image src="/instagram.svg" alt="Instagram" width={20} height={20} />
+          </a>
+        </div>
+
       </div>
     </footer>
-  );
+  )
 }
