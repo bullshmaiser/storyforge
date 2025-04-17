@@ -8,7 +8,7 @@ export default function Header() {
     <header className="w-full border-b border-gray-200 bg-white">
       <div className="mx-auto max-w-7xl px-4 py-4 flex items-center justify-between">
         <Link href="/">
-          <Image src="/logo.webp" alt="Logo" width={90} height={135} />
+          <Image src="/logo.webp" alt="Logo" width={89} height={135} />
         </Link>
         <nav className="space-x-6">
           <Link href="/about" className="text-gray-700 hover:text-black">About</Link>
