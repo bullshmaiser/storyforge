@@ -11,7 +11,7 @@ export default function Footer() {
         {/* Logo + Copyright */}
         <div className="flex items-center space-x-3">
           <Link href="/">
-            <Image src="/logo.png" alt="StoryForge Logo" width={44} height={67} />
+            <Image src="/logo.webp" alt="StoryForge Logo" width={44} height={67} />
           </Link>
           <span className="text-sm text-gray-600">© 2025 StoryForge</span>
         </div>
