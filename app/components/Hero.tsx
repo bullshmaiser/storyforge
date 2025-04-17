@@ -6,13 +6,11 @@ const Hero: FC = () => {
   return (
     <section className="hero">
       <div className="hero-content">
-        <h1>Создайте уникальные персонализированные книги для вашего ребенка!</h1>
-        <p>
-          Загрузите фотографии, создайте сюжет, и наш ИИ превратит их в
-          потрясающую иллюстрированную книгу, которая будет персонализирована
-          под ваши пожелания.
-        </p>
-        <button>Создать книгу</button>
+<h1>Create unique personalized books for anyone!</h1>
+<p>
+Upload photos, craft a storyline, and our AI will transform them into a stunning illustrated book tailored to your ideas and wishes.
+</p>
+<button>Create a Book</button>
       </div>
       <div className="hero-image">
         <Image
