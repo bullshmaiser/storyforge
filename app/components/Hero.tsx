@@ -6,7 +6,7 @@ import { FC } from "react";
 const Hero: FC = () => {
   return (
     <section className="hero bg-cover bg-center relative w-full h-screen" style={{ backgroundImage: 'url(/hero-background.svg)' }}>
-      {/* Контейнер для текста */}
+     
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-8 py-16 sm:px-16 sm:py-32">
         <h1 className="text-3xl sm:text-5xl font-semibold mb-4 text-[#db564a]">
           Create unique personalized books for anyone!
