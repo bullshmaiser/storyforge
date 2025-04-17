@@ -8,7 +8,7 @@ export default function Footer() {
     <footer className="w-full bg-gray-800 py-8 text-white">
       <div className="max-w-7xl mx-auto px-4 flex flex-col items-center space-y-4">
         <div className="flex items-center gap-2">
-          <Image src="/logo.svg" alt="Logo" width={44} height={66} />
+          <Image src="/logo.svg" alt="Logo" width={44} height={67} />
           <span className="text-lg font-semibold">StoryForge</span>
         </div>
         <nav className="flex gap-8">
