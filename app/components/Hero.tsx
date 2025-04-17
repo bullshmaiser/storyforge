@@ -16,10 +16,10 @@ const Hero: FC = () => {
       </div>
       <div className="hero-image">
         <Image
-          src="/hero-background.svg" // Замените на путь к нужной картинке
+          src="/hero-background.svg" 
           alt="Logo"
-          width={460} // Подберите подходящие размеры
-          height={312} // Подберите подходящие размеры
+          width={460} 
+          height={312} 
         />
       </div>
     </section>
