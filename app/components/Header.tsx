@@ -30,7 +30,15 @@ export default function Header() {
           <Link href="/about" className="text-gray-700 hover:text-black font-medium">About</Link>
           <Link href="/pricing" className="text-gray-700 hover:text-black font-medium">Pricing</Link>
           <Link href="/blog" className="text-gray-700 hover:text-black font-medium">Blog</Link>
-          <Link href="/create" className="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition-colors">Create a Book</Link>
+          <Link 
+            href="/create"
+            className="bg-black text-white px-4 py-2 rounded transition-colors"
+            style={{ transition: 'all 0.3s ease' }}
+            onMouseEnter={e => e.currentTarget.style.backgroundColor = '#db574c'}
+            onMouseLeave={e => e.currentTarget.style.backgroundColor = 'black'}
+          >
+            Create a Book
+          </Link>
         </nav>
       </div>
 
@@ -48,7 +56,15 @@ export default function Header() {
           <Link href="/about" className="block text-gray-700 hover:text-black font-medium">About</Link>
           <Link href="/pricing" className="block text-gray-700 hover:text-black font-medium">Pricing</Link>
           <Link href="/blog" className="block text-gray-700 hover:text-black font-medium">Blog</Link>
-          <Link href="/create" className="inline-block bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition-colors">Create a Book</Link>
+          <Link 
+            href="/create"
+            className="inline-block bg-black text-white px-4 py-2 rounded transition-colors"
+            style={{ transition: 'all 0.3s ease' }}
+            onMouseEnter={e => e.currentTarget.style.backgroundColor = '#db574c'}
+            onMouseLeave={e => e.currentTarget.style.backgroundColor = 'black'}
+          >
+            Create a Book
+          </Link>
         </div>
       </div>
     </header>
