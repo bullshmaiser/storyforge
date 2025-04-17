@@ -11,19 +11,18 @@ export default function Footer() {
         {/* Logo + Copyright */}
         <div className="flex items-center space-x-3">
           <Link href="/">
-            <Image src="/logo.svg" alt="StoryForge Logo" width={44} height={67} />
+            <Image src="/logo.png" alt="StoryForge Logo" width={44} height={67} />
           </Link>
           <span className="text-sm text-gray-600">© 2025 StoryForge</span>
         </div>
 
-        {/* Links */}
+        {/* Links + Instagram */}
         <div className="flex items-center space-x-6">
           <Link href="/terms" className="text-gray-600 hover:text-black text-sm">Terms of Service</Link>
           <Link href="/disclaimer" className="text-gray-600 hover:text-black text-sm">Disclaimer</Link>
 
-          {/* Instagram Icon */}
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-            <Image src="/instagram.svg" alt="Instagram" width={20} height={20} />
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-black text-lg">
+            <i className="fa-brands fa-instagram"></i>
           </a>
         </div>
 
