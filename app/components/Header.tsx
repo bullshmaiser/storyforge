@@ -27,9 +27,9 @@ export default function Header() {
 
         {/* Навигация для десктопа */}
         <nav className="space-x-6 hidden md:flex items-center">
-          <Link href="/about" className="text-gray-700 hover:text-black font-medium">About</Link>
-          <Link href="/pricing" className="text-gray-700 hover:text-black font-medium">Pricing</Link>
-          <Link href="/blog" className="text-gray-700 hover:text-black font-medium">Blog</Link>
+          <a href="#features" className="text-gray-700 hover:text-black font-medium">Features</a>
+          <a href="#pricing" className="text-gray-700 hover:text-black font-medium">Pricing</a>
+          <a href="#howitworks" className="text-gray-700 hover:text-black font-medium">How it works</a>
           <Link 
             href="/create"
             className="bg-black text-white px-4 py-2 rounded transition-colors"
@@ -53,9 +53,9 @@ export default function Header() {
           >
             &times;
           </button>
-          <Link href="/about" className="block text-gray-700 hover:text-black font-medium">About</Link>
-          <Link href="/pricing" className="block text-gray-700 hover:text-black font-medium">Pricing</Link>
-          <Link href="/blog" className="block text-gray-700 hover:text-black font-medium">Blog</Link>
+          <a href="#features" onClick={toggleMenu} className="block text-gray-700 hover:text-black font-medium">Features</a>
+          <a href="#pricing" onClick={toggleMenu} className="block text-gray-700 hover:text-black font-medium">Pricing</a>
+          <a href="#howitworks" onClick={toggleMenu} className="block text-gray-700 hover:text-black font-medium">How it works</a>
           <Link 
             href="/create"
             className="inline-block bg-black text-white px-4 py-2 rounded transition-colors"
@@ -70,3 +70,4 @@ export default function Header() {
     </header>
   )
 }
+``
